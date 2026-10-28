@@ -1,0 +1,54 @@
+{
+  "model_name": "diabetes-classifier",
+  "model_type": "HistGradientBoostingClassifier",
+  "best_params": {
+    "clf": "HistGradientBoostingClassifier(random_state=42)",
+    "clf__learning_rate": 0.1,
+    "clf__max_depth": 6
+  },
+  "features": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ],
+  "categorical_features": [
+    "gender",
+    "smoking_history"
+  ],
+  "numeric_features": [
+    "age",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ],
+  "binary_features": [
+    "hypertension",
+    "heart_disease"
+  ],
+  "categories": {
+    "gender": [
+      "Female",
+      "Male",
+      "Other"
+    ],
+    "smoking_history": [
+      "No Info",
+      "current",
+      "ever",
+      "former",
+      "never",
+      "not current"
+    ]
+  },
+  "target": "diabetes",
+  "random_state": 42,
+  "train_size": 76916,
+  "test_size": 19230,
+  "python_version": "3.13.18",
+  "sklearn_version": "1.6.1"
+}
